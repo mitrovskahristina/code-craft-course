@@ -1,0 +1,61 @@
+.certificate {
+    width: 300px;
+    height: 180px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    position: absolute;
+}
+
+.cert_icon {
+    position: relative;
+}
+
+.blue {
+    z-index: 0;
+    background: linear-gradient(108.76deg, rgba(69, 156, 255, 0.7) 1.45%, rgba(30, 80, 154, 0.5) 100%);
+}
+
+.purple {
+    z-index: 1;
+    top: 70px;
+    left: 100px;
+    background: linear-gradient(108.76deg, rgba(218, 27, 210, 0.7) 1.45%, rgba(77, 34, 220, 0.5) 100%);
+}
+
+.green {
+    z-index: 2;
+    top: 140px;
+    left: 200px;
+    background: linear-gradient(108.76deg, rgba(10, 207, 131, 0.7) 1.44%, rgba(26, 188, 254, 0.5) 100%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .certificate {
+        width: 250px;
+        height: 150px;
+    }
+
+    .purple {
+        top: 100px;
+        left: 60px;
+    }
+
+    .green {
+        top: 220px;
+        left: 140px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .blue{
+        left: -60px;
+    }
+
+    .purple {
+        left: 0px;
+    }
+
+    .green {
+        left: 80px;
+    }
+}

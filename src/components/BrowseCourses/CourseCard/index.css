@@ -1,0 +1,12 @@
+h3 {
+    font-size: 1.25rem;
+}
+
+.course_card {
+    width: 260px;
+    height: 370px;
+    text-align: center;
+    background: linear-gradient(26.1deg, #6710C9 0%, #8716C0 100%);
+    border-radius: 20px;
+    padding: 35px 20px;
+}

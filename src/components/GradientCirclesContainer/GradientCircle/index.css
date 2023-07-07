@@ -1,0 +1,48 @@
+.path_img-wrapper {
+    position: relative;
+}
+
+.circle {
+    border-radius: 50%;
+    box-shadow: inset 0px 4px 17px 15px rgba(70, 20, 60, 0.2);
+    position: absolute;
+    transform: translate(var(--moveX, 0), var(--moveY, 0));
+    
+}
+
+/* .path_img-wrapper {
+    position: relative;
+    Add other necessary styles for the section
+  } */
+
+.first_circle {
+    height: 200px;
+    width: 200px;
+    /* background: linear-gradient(70deg, #7554E5 12.66%, #F200BD 90.38%); */
+    background: radial-gradient(70.85% 70.85% at 71.61% 29.15%, #D366DD 0%, #B851C9 27.08%, #6C209A 55.21%, #4512AA 77.6%, #110746 100%);
+    z-index: -3;
+    margin-top: 10%;
+    transition: transform 0.05s ease-in-out;
+}
+
+.second_circle {
+    height: 125px;
+    width: 125px;
+    /* background: linear-gradient(70deg, #F200BD 12.66%, #CD833A 90.38%); */
+    background: radial-gradient(70.85% 70.85% at 71.61% 29.15%, #CD833A 0%, #CA5E3C 27.08%, #922e65 55.21%, #711E5F 77.6%, #35022a 100%);
+    z-index: -1;
+    margin-top: 50%;
+    margin-left: 5%;
+    transition: transform 0.02s ease-in-out;
+}
+
+.third_circle {
+    height: 100px;
+    width: 100px;
+    /* background: linear-gradient(70deg, #F200BD 12.66%, #0071F2 90.38%); */
+    background: radial-gradient(59.71% 59.71% at 71.61% 29.15%, #8356cc 0%, #9231dd 13.33%, #7e1fc7 43.54%, #5a0c77 80%, #270844 100%);
+    z-index: -1;
+    transition: transform 0.04s ease-in-out;
+    margin-top: 50%;
+    margin-left: 50%;
+}

@@ -1,0 +1,65 @@
+.contact_form {
+    background-color: #E2D6EF;
+    padding: 50px;
+    border-radius: 0 30px 30px 0;
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.full_name_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact_form input,
+.contact_form textarea {
+    border-radius: 10px;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+    outline: none;
+    /* Remove the default focus outline */
+    box-shadow: 0 0 0 0.2rem rgba(204, 0, 255, 0.25);
+    /* Set the desired focus color */
+}
+
+.full_name_input input {
+    width: 250px;
+}
+
+.first_name_input input:first-child {
+    margin-right: 10px;
+}
+
+.error_message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .contact_form {
+        margin: 0 0 10% 0;
+        border-radius: 0 0 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .full_name_input {
+        flex-direction: column;
+    }
+
+    .first_name_input input:first-child {
+        margin-right: 0px;
+    }
+
+    .full_name_input input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.review_card_container{
+    display: flex;
+    justify-content: space-between;   
+    margin-top: 50px; 
+}
+
+@media only screen and (max-width: 992px) {
+    .review_card_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

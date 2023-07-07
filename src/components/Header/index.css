@@ -1,0 +1,44 @@
+.header_custom{
+    background-color: #1d1d41;
+}
+
+.navigation_bar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end
+}
+
+
+.navigation_bar a{
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* a:last-child {
+    padding: 0px 0px 0px 30px;
+} */
+
+a:hover {
+    color: var(--primary);
+}
+
+button.navbar-toggler {
+    background-color: none;
+    border: none;
+}
+
+button.navbar-toggler:focus, button.navbar-toggler:active {
+    box-shadow: none;
+}
+
+.navbar-nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav a{
+    padding: 5px 30px;
+}

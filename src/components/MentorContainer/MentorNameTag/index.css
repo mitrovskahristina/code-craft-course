@@ -1,0 +1,17 @@
+.name_tag {
+    background: linear-gradient(80.02deg, #6A00FF 0%, #DA06FF 100%) !important;
+    width: 800px;
+    padding: 20px 50px;
+    align-self: start;
+}
+
+.reverse {
+    text-align: right;
+    align-self: end;
+}
+
+@media only screen and (max-width: 576px) {
+    .name_tag {
+        width: 400px;
+    }
+}

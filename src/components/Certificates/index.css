@@ -1,0 +1,30 @@
+.get_certificates {
+    display: flex;
+    flex-direction: row;
+    margin: 200px auto;
+}
+
+.left_section {
+    width: 70%;
+}
+
+@media only screen and (max-width: 992px) {
+    .get_certificates {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .get_certificates h2 {
+        text-align: center;
+    }
+
+    .get_certificates .right_section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .get_certificates .left_section{
+        height: 200px;
+        margin-bottom: 100px;
+    }
+}

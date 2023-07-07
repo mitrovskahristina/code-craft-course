@@ -1,0 +1,18 @@
+.available_courses {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10% auto;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .available_courses {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .available_courses {
+        grid-template-columns: auto;
+    }
+}

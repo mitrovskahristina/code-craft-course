@@ -1,0 +1,9 @@
+.application_form {
+    padding: 0 5% 5% 5%;
+}
+
+.application_form input:focus,
+.application_form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(204, 0, 255, 0.25);
+}

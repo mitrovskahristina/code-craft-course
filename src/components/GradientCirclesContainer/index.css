@@ -1,0 +1,14 @@
+.circle_container{
+    position: relative;
+}
+
+.circle_container img{
+    z-index: 2; 
+    margin-left: 10%;
+}
+
+@media only screen and (max-width: 576px){
+    .circle_container img{
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,21 @@
+.our_mission{
+    margin: 120px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .our_mission{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .our_mission .left_section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

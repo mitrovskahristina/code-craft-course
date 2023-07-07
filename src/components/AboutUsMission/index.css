@@ -1,0 +1,78 @@
+.about_us_mission {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(80.02deg, #DA06FF 0%, #6A00FF 100%);
+    border-radius: 30px;
+    padding: 50px;
+    margin: 10% 0;
+}
+
+.header_section {
+    width: 250%;
+    position: relative;
+}
+
+
+.tree_d_circle {
+    background: radial-gradient(70.85% 70.85% at 71.61% 29.15%, #DD9266 0%, #C9517E 27.08%, #7E209A 55.21%, #4416A0 77.6%, #0f0353 100%); 
+    border-radius: 50%;
+    position: relative;
+}
+
+.big_circle {
+    width: 230px;
+    height: 230px;
+    z-index: 1;
+    position: absolute;
+}
+
+.small_circle{
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
+
+.big_text {
+    font-weight: 800;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+}
+
+
+.text_section {
+    margin-left: 50px;
+}
+
+.light_paragraph {
+    color: #E4E4EE;
+}
+
+@media only screen and (max-width: 992px) {
+    .about_us_mission {
+        flex-direction: column;
+    }
+
+    .header_section{
+        width: 100%;
+        height: 200px;
+    }
+
+    .text_section {
+        margin-left: 0;
+    }
+
+    .big_circle{
+        width: 150px;
+        height: 150px;
+    }
+
+    .small_circle {
+        width: 100px;
+        height: 100px;
+        left: 20%;
+    }
+}

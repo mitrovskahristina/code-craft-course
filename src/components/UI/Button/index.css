@@ -1,0 +1,25 @@
+.primary_button{
+    background-color: var(--primary);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    margin-top: 50px;
+}
+
+.primary_button:hover, .primary_button:focus, .primary_button:active {
+    color: #fff!important;
+    background-color: #0065d7!important;
+}
+
+.modal_button{
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+    .primary_button {
+        font-size: 14px;
+    }
+}

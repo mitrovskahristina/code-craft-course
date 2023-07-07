@@ -1,0 +1,7 @@
+.review_picture{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 5px solid #5F5F86;
+    border-radius: 50%;
+}

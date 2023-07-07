@@ -1,0 +1,25 @@
+.card_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 992px) {
+    .card_container {
+        grid-template-columns: auto auto;
+        row-gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .card_container {
+        column-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .card_container {
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+}

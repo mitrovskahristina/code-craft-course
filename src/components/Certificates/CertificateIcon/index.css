@@ -1,0 +1,18 @@
+.certificate_icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.certificate_icon{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}

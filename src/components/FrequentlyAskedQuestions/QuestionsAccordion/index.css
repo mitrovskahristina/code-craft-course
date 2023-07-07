@@ -1,0 +1,27 @@
+.question {
+    background-color: rgb(44, 33, 90);
+    margin: 10px 0;
+}
+
+.question .accordion-button:focus {
+    box-shadow: none;
+    /* border-color: rgba(0,0,0,.125); */
+
+}
+
+.question .accordion-button::after{
+    color: white;
+}
+
+.question .accordion-button, .question .accordion-collapse{
+    background-color: rgb(44, 33, 90);
+    color: white;
+}
+
+.question_header button{
+    font-weight: 600!important;
+}
+
+.question_body {
+    color: #d0d0eb;
+}

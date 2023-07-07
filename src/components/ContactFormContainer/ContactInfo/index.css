@@ -1,0 +1,16 @@
+.contact_info{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon_contact{
+    margin-right: 10px;
+    color: #F25CD5;
+    font-size: 18px;
+}
+
+.icon_label{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
