@@ -1,0 +1,12 @@
+.toast_container {
+    position: fixed; /* Change to fixed */
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 1003;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 20vw;
+    max-width: 30vw;
+}

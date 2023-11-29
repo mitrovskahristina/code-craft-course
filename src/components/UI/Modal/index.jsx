@@ -1,29 +1,46 @@
-import { motion } from 'framer-motion';
+import ReactDOM from "react-dom";
+import { motion } from "framer-motion";
+import "./index.css";
 
-import './index.css'
+const Backdrop = ({ onClick }) => (
+  <div className="modal_backdrop" onClick={onClick} />
+);
 
-const Modal = ({ isOpen, onClose, children }) => {
-  const handleCloseModal = (event) => {
-    if (event.target === event.currentTarget) {
-      onClose();
-    }
-  };
+const ModalOverlay = ({ onClose, heading, children }) => (
+  <motion.div
+    className="modal_content"
+    initial={{ scale: 0 }}
+    animate={{ scale: 1 }}
+  >
+    <div className="modal_heading">
+      <h3>{heading}</h3>
+      <button className="modal_close" onClick={onClose}>
+        X
+      </button>
+    </div>
+    {children}
+  </motion.div>
+);
 
-  if (!isOpen) return null;
+
+const Modal = ({ isOpen, onClose, children, heading }) => {
+  if (!isOpen) {
+    return null;
+  }
 
   return (
-    <div className="modal_overlay" onClick={handleCloseModal}>
-      <motion.div 
-        className="modal_content"
-        initial = {{scale:0}}
-        animate = {{scale:1}}
-      >
-        <button className="modal_close" onClick={onClose}>
-          X
-        </button>
-        {children}
-      </motion.div>
-    </div>
+    <>
+      {ReactDOM.createPortal(
+        <Backdrop onClick={onClose} />,
+        document.getElementById("backdrop-root")
+      )}
+      {ReactDOM.createPortal(
+        <ModalOverlay onClose={onClose} heading={heading}>
+          {children}
+        </ModalOverlay>,
+        document.getElementById("modal-root")
+      )}
+    </>
   );
 };
 

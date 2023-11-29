@@ -1,5 +1,5 @@
 /* Modal Overlay */
-.modal_overlay {
+.modal_backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,62 +10,42 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(4px);
+    z-index: 1000;
 }
 
 /* Modal Content */
 .modal_content {
-    position: relative;
-    /* Added to position the close button relative to the content */
+    position: fixed; /* Change to fixed */
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
     background-color: rgb(5, 5, 87);
-    /* padding: 30px 25px; */
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     width: 50vw;
-    padding-top: 80px;
+    max-width: 60vw;
 }
 
 /* Modal Close Button */
 .modal_close {
     color: rgb(238, 238, 238);
     position: absolute;
-    top: 30px;
-    right: 25px;
+    top: 10px;
+    right: 10px;
     background: none;
     border: none;
     font-size: 20px;
     cursor: pointer;
 }
 
-
-::-webkit-scrollbar {
-    width: 10px;
+.modal_content img {
+    width: 15vw;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #050555;
-    border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #5175c2;
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #5175c2;
-}
-
-@media only screen and (max-width: 992px) {
-    .modal_content {
-        width: 70vw;
-    }
-}
-
-@media only screen and (max-width: 587px) {
-    .modal_content {
-        width: 90vw;
-    }
+.modal_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
 }

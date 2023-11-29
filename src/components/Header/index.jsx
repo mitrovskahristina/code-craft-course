@@ -1,4 +1,4 @@
-import { Navbar, NavbarBrand, Nav, Container, NavItem } from 'react-bootstrap'
+import { Navbar, NavbarBrand, Nav, Container } from 'react-bootstrap'
 import { NavLink } from "react-router-dom"
 import Logo from '../../assets/logo.svg'
 
@@ -6,7 +6,7 @@ import './index.css'
 
 const Header = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" className='navbar-dark bd-navbar header_custom'>
+        <Navbar collapseOnSelect expand="lg" className='navbar-dark bd-navbar navbar-fixed-top header_custom'>
             <Container className="container-xxl">
                 <NavbarBrand>
                     <NavLink to='/'>

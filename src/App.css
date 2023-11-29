@@ -1,0 +1,21 @@
+/* Customize Scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #050555;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5175c2; /* Adjust the color as needed */
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5175c2; /* Adjust the color as needed */
+}
